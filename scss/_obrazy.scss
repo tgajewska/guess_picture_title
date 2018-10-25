@@ -1,0 +1,199 @@
+// main: main.scss
+
+html {
+  font-size: 10px;
+  @media screen and (min-width: $sm-min) {
+    font-size: 16px;
+  }
+}
+
+body, html {
+  height:100%;
+  width:100%;
+}
+
+a {
+  color:inherit;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+header {
+  z-index: 1;
+  width:100%;
+
+  h1 {
+    text-align: center;
+    font-weight: bold;
+    color: $main-text-color;
+    margin: 0;
+    padding:2rem;
+    a:hover {
+      color: lighten($main-text-color, 10%);
+    }
+  }
+
+  .subtitle {
+    background-color: $gray-5-color;
+    .subtitle-text {
+      padding: 0.25rem;
+      margin: 0;
+      font-size: 1rem;
+      font-weight: lighter;
+      color: gray;
+      line-height: 1.2;
+      span {
+        color: $secondary-color;
+        font-weight: bold;
+      }
+    }
+    .button-game-rules {
+      margin-left: auto;
+      border-radius: 50%;
+      border: 2px solid $secondary-color;
+      background-color: transparent;
+      color: $secondary-color;
+      height: 30px;
+      width:30px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      padding:0;
+      transition: all 0.5s ease-out;
+      -o-transition       : all 0.5s ease-in-out;
+      -moz-transition     : all 0.5s ease-in-out;
+      -webkit-transition  : all 0.5s ease-in-out;
+      :hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.title, footer {
+  background-color: $primary-color;
+  padding:0;
+  margin: 0;
+  box-shadow: 0 2px 2px $gray-5-color;
+  position: relative;
+  z-index: 1;
+}
+
+footer {
+  margin-top: 3rem;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  p {
+    text-align: center;
+    padding: 2rem;
+    color: $main-text-color;
+    margin-bottom: 0;
+  }
+}
+
+.main {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+.timer {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color: red;
+  height: 5rem;
+  }
+  .green {
+    color: green;
+  }
+  .game-inner {
+    height:100%;
+    aside {
+      .answer-list {
+        list-style-type: none;
+        padding-left: 0;
+        margin-left: auto;
+        .btn-answer {
+          background-color: white;
+          border-color: green;
+          color: green;
+          min-width: 100%;
+          width: auto;
+          white-space:normal;
+          font-size: 0.9rem;
+          border-radius: 0;
+          &:hover {
+            background-color: green;
+            color: white;
+          }
+        }
+        .green-backgr {
+          background-color: green;
+          color: white;
+        }
+      }
+    }
+    .picture-space {
+      position:relative;
+      padding-left: 15px;
+      .row {
+        margin-left: 0;
+      }
+      .picture {
+        padding-top: 100%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .grayscale {
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+      }
+
+      .active {
+        cursor:pointer;
+      }
+
+
+      .filter {
+        -webkit-filter: blur(25px);
+        -moz-filter: blur(25px);
+        -o-filter: blur(25px);
+        -ms-filter: blur(25px);
+        filter: blur(25px);
+      }
+    }
+  }
+  .intro {
+    text-align: justify;
+  }
+  .category-list {
+    padding-top: 3rem;
+    text-align: center;
+    h2 {
+      color: $main-text-color;
+
+    }
+    ul {
+      list-style-type: none;
+      font-size: 1.5rem;
+      padding-left: 0;
+      a {
+        color: $gray-3-color;
+        &:hover {
+          color:$secondary-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+.btn:focus {
+  box-shadow: none;
+}

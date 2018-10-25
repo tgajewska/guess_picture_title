@@ -1,0 +1,37 @@
+// main: main.scss
+
+$main-text-color : #7a7a52;
+$primary-color : #c2c2a3;
+$secondary-color: #990033;
+
+$gray-1-color : #303030;
+$gray-2-color : #606060;
+$gray-3-color : #909090;
+$gray-4-color : #b0b0b0;
+$gray-5-color : #e0e0e0;
+$gray-6-color : #f4f4f4;
+
+/* fonts */
+
+$font-default : 'sofia_proregular', sans-serif;
+
+$sm-min: 576px;
+$md-min: 768px;
+$lg-min: 992px;
+$xl-min: 1200px;
+
+$xs-max: ($sm-min - 1);	 // 575
+$sm-max: ($md-min - 1);  // 767
+$md-max: ($lg-min - 1);  // 991
+$lg-max: ($xl-min - 1);  // 1199
+
+$media-xs-max:         "only screen and (max-width: " + $xs-max + ")";
+$media-sm-max:         "only screen and (max-width: " + $sm-max + ")";
+$media-md-max:         "only screen and (max-width: " + $md-max + ")";
+
+$media-sm-min:         "only screen and (min-width: " + $sm-min + ")";
+$media-xl-min:         "only screen and (min-width: " + $xl-min + ")";
+
+$media-sm:         "only screen and (min-width: " + $sm-min + ") and (max-width: " + $sm-max + ")";
+$media-md:         "only screen and (min-width: " + $md-min + ") and (max-width: " + $md-max + ")";
+$media-lg:         "only screen and (min-width: " + $lg-min + ") and (max-width: " + $lg-max + ")";

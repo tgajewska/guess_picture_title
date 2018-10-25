@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Co to za obraz?</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="scss/main.css" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>  <div class="title">
+    <h1><a href="/" title="Wróć do strony głównej">ZGADNIJ, CO TO ZA OBRAZ?</a></h1></div>
+    <div class="subtitle">  <div class="container d-flex">
+      <div class="d-flex flex-column flex-sm-row align-items-center">
+        <div class="subtitle-text">Kategoria: <span>kobieta</span></div>
+        <div class="subtitle-text counter"> Liczba punktów: <span>0</span> </div></div>
+        <div type="button" class="btn button-game-rules" data-toggle="popover" data-trigger="hover" data-html="true"
+        data-content="
+        Zasady gry:</br>
+        1. Kliknij w którykolwiek z zamazanych obrazów</br>
+        2. Po kliknięciu obraz na pięć sekund będzie widoczny ostry</br>
+        3. Jeśi przez te pięć sekund klikniesz we właściwy tytuł obrazu, zdobędziesz punkt</br>
+        4. Po pięciu sekundach obraz wyszarzy się i szansa za odgadnięcie tego tytułu przepada</br>
+        Niektóre z obrazów są Ci z pewnością dobrze znane, więc spróbuj rozpoznać je nawet w rozmazanej formie. Dzięki temu będzie Ci łatwiej! Pamiętaj jednak, że przycisk z właściwym tytułem aktywuje się dopiero po kliknięciu w obrazek."
+        >?</div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="container main">
+    <div class="row">
+      <div class="col-12 timer text-center">
+        Zacznij zabawę!
+      </div>
+    </div>
+    <div class="row game-inner ">
+      <article class="col-8  col-lg-5 offset-lg-1 picture-space">
+        <div class="row">
+          <div class=" col-4 pr-0 p-0 "><div class="picture filter active" ></div></div>
+          <div class=" col-4 pr-0 p-0 "><div class="picture filter active" ></div></div>
+          <div class=" col-4 pr-0 p-0 "><div class="picture filter active" ></div></div>
+          <div class=" col-4 pr-0 p-0 "><div class="picture filter active" ></div></div>
+          <div class=" col-4 pr-0 p-0 "><div class="picture filter active" ></div></div>
+          <div class=" col-4 pr-0 p-0 "><div class="picture filter active" ></div></div>
+          <div class=" col-4 pr-0 p-0 "><div class="picture filter active" ></div></div>
+          <div class=" col-4 pr-0 p-0 "><div class="picture filter active" ></div></div>
+          <div class=" col-4 pr-0 p-0 "><div class="picture filter active" ></div></div>
+        </div>
+      </article>
+
+      <aside class="col-4 offset-lg-1 answer">
+        <ul class="answer-list"></ul>
+      </aside>
+
+    </div>
+  </div>
+  <footer>
+    <p>Copyright &copy; Teresa Gajewska 2018</p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="pictures.js"></script>
+</body>
+</html>
